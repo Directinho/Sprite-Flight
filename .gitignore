@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 .utmp/
+=======
+# Unity - Official recommended ignores
+>>>>>>> 72b1c1b (First commit - Lesson 3 finished)
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -10,6 +14,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+<<<<<<< HEAD
 *.log
 
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
@@ -45,10 +50,23 @@ ExportedObj/
 *.sln
 *.suo
 *.tmp
+=======
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Visual Studio / Rider / IDE cache
+.vs/
+*.vsidx
+ExportedObj/
+*.csproj
+*.sln
+*.suo
+>>>>>>> 72b1c1b (First commit - Lesson 3 finished)
 *.user
 *.userprefs
 *.pidb
 *.booproj
+<<<<<<< HEAD
 *.svd
 *.pdb
 *.mdb
@@ -97,3 +115,34 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+=======
+*.opendb
+*.VC.db
+
+# Unity generated files
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+mono_crash.*
+
+# Builds and packages
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Addressables (se não estiver usando, pode deixar)
+[Aa]ssets/StreamingAssets/aa*
+[Aa]ssets/AddressableAssetsData/*
+
+# Visual Scripting generated
+[Aa]ssets/Unity.VisualScripting.Generated/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Ignore .vsconfig if you want (optional)
+.vsconfig
+>>>>>>> 72b1c1b (First commit - Lesson 3 finished)
