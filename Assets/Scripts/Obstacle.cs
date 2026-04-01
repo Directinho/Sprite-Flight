@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class Script : MonoBehaviour
 {
-    public float minSize = 0.5f;
-    public float maxSize = 2.0f;
+    public float minSize = 1f;
+    public float maxSize = 3.0f;
     Rigidbody2D rb;
     public float minSpeed = 50f;
     public float maxSpeed = 150f;

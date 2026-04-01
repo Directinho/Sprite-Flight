@@ -939,6 +939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40ac7d20329ebcd45a78b37d8d0e70c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thrustForce: 4
 --- !u!1 &1648196586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,6 +1410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40ac7d20329ebcd45a78b37d8d0e70c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thrustForce: 4
 --- !u!1 &2031973526
 GameObject:
   m_ObjectHideFlags: 0
