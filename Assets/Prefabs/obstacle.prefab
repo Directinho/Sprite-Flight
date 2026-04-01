@@ -182,7 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5a1e7d958fdcaf429309f86f6399044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSize: 1
-  maxSize: 5
+  minSize: 0.5
+  maxSize: 2
   minSpeed: 50
   maxSpeed: 150
+  maxSpinSpeed: 10
