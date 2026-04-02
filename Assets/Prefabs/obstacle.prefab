@@ -275,3 +275,4 @@ MonoBehaviour:
   minSpeed: 50
   maxSpeed: 150
   maxSpinSpeed: 10
+  explosionEffect: {fileID: 0}

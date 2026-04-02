@@ -9,6 +9,8 @@ public class Script : MonoBehaviour
     public float minSpeed = 50f;
     public float maxSpeed = 150f;
     public float maxSpinSpeed = 10f;
+    public GameObject explosionEffect;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,5 +29,13 @@ public class Script : MonoBehaviour
     void Update()
     {
 
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Vector2 contactPoint = collision.GetContact(0).point;
+        GameObject bounceEffect = Instantiate(explosionEffect, contactPoint, Quaternion.identity);
+
+        // Destroy the effect after 1 second
+        Destroy(bounceEffect, 1f);
     }
 }
