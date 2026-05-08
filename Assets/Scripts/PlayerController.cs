@@ -20,10 +20,37 @@ public class PlayerController : MonoBehaviour
     private Button RestartButton;
     private Button HighScoreReset;
     private float currentScore = 0f;
-
+    public GameObject One, Two, Three, Four;
+    bool ShipOneSelected;
+    bool ShipTwoSelected;
+    bool ShipThreeSelected;
+    bool ShipFourSelected;
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        if (SelectedSkin.ShipOneSelected)
+        {
+            One.SetActive(true);
+        }
+        else if (SelectedSkin.ShipTwoSelected)
+        {
+            Two.SetActive(true);
+        }
+        else if (SelectedSkin.ShipThreeSelected)
+        {
+            Three.SetActive(true);
+        }
+        else if (SelectedSkin.ShipFourSelected)
+        {
+            Four.SetActive(true);
+        }
+        else
+        {
+            One.SetActive(true);
+            SelectedSkin.ShipOneSelected = true;
+        }
+
+
+    rb = GetComponent<Rigidbody2D>();
         scoreText = uiDocument.rootVisualElement.Q<Label>("ScoreLabel");
         HighScoredText = uiDocument.rootVisualElement.Q<Label>("HighScoreLabel");
         RestartButton = uiDocument.rootVisualElement.Q<Button>("RestartButton");
@@ -40,6 +67,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            SceneManager.LoadScene("SkinSelection");
+        }
         score = Mathf.FloorToInt(elapsedTime * scoreMultiply);
         currentScore = score;
         elapsedTime += Time.deltaTime;
